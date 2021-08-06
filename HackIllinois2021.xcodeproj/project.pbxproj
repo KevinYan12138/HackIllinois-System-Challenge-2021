@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4974C49526A897F200F7438C /* apiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974C49426A897F200F7438C /* apiCall.swift */; };
+		4991432926AC4A7500317FCB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4991432826AC4A7500317FCB /* Kingfisher */; };
 		499D702F26A84F090084F916 /* HackIllinois2021App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D702E26A84F090084F916 /* HackIllinois2021App.swift */; };
 		499D703126A84F090084F916 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D703026A84F090084F916 /* ContentView.swift */; };
 		499D703326A84F0A0084F916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499D703226A84F0A0084F916 /* Assets.xcassets */; };
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4974C49426A897F200F7438C /* apiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiCall.swift; sourceTree = "<group>"; };
 		499D702B26A84F090084F916 /* HackIllinois2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackIllinois2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499D702E26A84F090084F916 /* HackIllinois2021App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackIllinois2021App.swift; sourceTree = "<group>"; };
 		499D703026A84F090084F916 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4991432926AC4A7500317FCB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 				499D703226A84F0A0084F916 /* Assets.xcassets */,
 				499D703726A84F0A0084F916 /* Info.plist */,
 				499D703426A84F0A0084F916 /* Preview Content */,
+				4974C49426A897F200F7438C /* apiCall.swift */,
 			);
 			path = HackIllinois2021;
 			sourceTree = "<group>";
@@ -146,6 +151,9 @@
 			dependencies = (
 			);
 			name = HackIllinois2021;
+			packageProductDependencies = (
+				4991432826AC4A7500317FCB /* Kingfisher */,
+			);
 			productName = HackIllinois2021;
 			productReference = 499D702B26A84F090084F916 /* HackIllinois2021.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 499D702226A84F090084F916;
+			packageReferences = (
+				4991432726AC4A7500317FCB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 499D702C26A84F090084F916 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4974C49526A897F200F7438C /* apiCall.swift in Sources */,
 				499D703126A84F090084F916 /* ContentView.swift in Sources */,
 				499D702F26A84F090084F916 /* HackIllinois2021App.swift in Sources */,
 			);
@@ -580,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4991432726AC4A7500317FCB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4991432826AC4A7500317FCB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4991432726AC4A7500317FCB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 499D702326A84F090084F916 /* Project object */;
 }
